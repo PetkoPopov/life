@@ -1,7 +1,6 @@
 import { clearTable } from "./clearTable.js"
 import { makeTable } from "./makeTable.js"
-
-
+import { startGame } from "./startGame.js"
 
 var hor = document.getElementById('input-hor')
 
@@ -60,11 +59,12 @@ let body = document.getElementsByTagName("body")[0]
 
 let circle = document.createElement('div')
 
-circle.style.backgroundColor = "red"
-
 let button = document.createElement('div')
 
 button.addEventListener('click', () => {
+
+
+    let circle = document.createElement('div')
     circle.style.borderRadius = "50%"
     circle.style.border = "solid black 3px"
     circle.style.textAlign = 'center'
@@ -73,7 +73,6 @@ button.addEventListener('click', () => {
     circle.style.top = "25px"
     circle.style.width = "30px"
     circle.style.height = "30px"
-    circle.style.fontSize = "40px"
     circle.style.textAlign = "center"
     circle.style.backgroundColor='red'
     let rows = Number(hor.textContent)
@@ -84,7 +83,7 @@ button.addEventListener('click', () => {
       
     button.appendChild(circle)
     setTimeout(() => {
-        button.textContent = ' '
+        
         button.style.backgroundColor = "lightgreen"
         button.removeChild(circle)
     }, 300)
@@ -102,7 +101,7 @@ button.style.borderRadius = "20px"
 button.style.boxShadow = "10px 6px darkolivegreen"
 button.style.backgroundColor = "lightgreen"
 button.style.fontSize = "125%"
-button.textContent = "create table"
+button.textContent = "CreateTable"
 
 body.appendChild(button)
 //////////////////////////////////////////////////////////////
@@ -112,6 +111,8 @@ let buttonClr = document.createElement('div')
 buttonClr.addEventListener('click', () => {
 
     clearTable()
+
+    let circle = document.createElement('div')
     circle.style.borderRadius = "50%"
     circle.style.border = "solid black 3px"
     circle.style.textAlign = 'center'
@@ -120,18 +121,16 @@ buttonClr.addEventListener('click', () => {
     circle.style.top = "25px"
     circle.style.width = "30px"
     circle.style.height = "30px"
-    circle.style.fontSize = "40px"
-    circle.style.textAlign = "center"
-
-    buttonClr.style.backgroundColor = "lightblue"
     circle.style.backgroundColor="yellow"
+    
+    buttonClr.style.backgroundColor = "lightblue"
     buttonClr.appendChild(circle)
+
     setTimeout(() => {
-        buttonClr.textContent = ' '
         buttonClr.style.backgroundColor = "red"
         buttonClr.removeChild(circle)
-        buttonClr.textContent = "table cleared"
     }, 300)
+
 })
 buttonClr.style.textAlign = 'center'
 buttonClr.style.position = "fixed"
@@ -139,14 +138,12 @@ buttonClr.style.left = "580px"
 buttonClr.style.top = "10px"
 buttonClr.style.width = "120px"
 buttonClr.style.height = "60px"
-buttonClr.style.fontSize = "40px"
-buttonClr.style.textAlign = "center"
 buttonClr.style.border = "black solid 5px"
 buttonClr.style.borderRadius = "20px"
 buttonClr.style.boxShadow = "10px 6px darkolivegreen"
 buttonClr.style.backgroundColor = "red"
 buttonClr.style.fontSize = "125%"
-buttonClr.textContent = "clear table"
+buttonClr.textContent ='ClearTable'
 
 body.appendChild(buttonClr)
 /////////////////////////////////////////////////////////////////////////////////
@@ -154,6 +151,11 @@ body.appendChild(buttonClr)
 ///////////////////////////////////////////////////////////////////////////////
 let buttonStart = document.createElement('div')
 buttonStart.addEventListener('click', () => {
+    let rows = Number(hor.textContent)
+    let cols = Number(ver.textContent)
+    startGame(rows,cols)
+
+    let circle = document.createElement('div')
     circle.style.borderRadius = "50%"
     circle.style.border = "solid black 3px"
     circle.style.textAlign = 'center'
@@ -163,13 +165,13 @@ buttonStart.addEventListener('click', () => {
     circle.style.width = "30px"
     circle.style.height = "30px"
     circle.style.fontSize = "40px"
-    circle.style.textAlign = "center"
+    circle.style.backgroundColor = "yellow"
+   
 
     buttonStart.style.backgroundColor = "lightblue"
-    circle.style.backgroundColor = "yellow"
     buttonStart.appendChild(circle)
     setTimeout(() => {
-        buttonStart.textContent = ' '
+        
         buttonStart.style.backgroundColor = "red"
         buttonStart.removeChild(circle)
         
@@ -181,8 +183,6 @@ buttonStart.style.left = "930px"
 buttonStart.style.top = "10px"
 buttonStart.style.width = "120px"
 buttonStart.style.height = "60px"
-buttonStart.style.fontSize = "40px"
-buttonStart.style.textAlign = "center"
 buttonStart.style.border = "black solid 5px"
 buttonStart.style.borderRadius = "20px"
 buttonStart.style.boxShadow = "10px 6px darkolivegreen"
@@ -190,6 +190,7 @@ buttonStart.style.backgroundColor = "red"
 buttonStart.style.fontSize = "125%"
 buttonStart.textContent = "StartGame"
 body.appendChild(buttonStart)
+
 export {
     hor, ver
 }

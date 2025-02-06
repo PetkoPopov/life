@@ -8,11 +8,13 @@ for(let row = 0 ;row < rows ;row++ ){
     for(let col =0 ;col<cols;col++){
         let td = document.createElement("td")
         console.log('in TD')
-        td.style.width = "3px"
-        td.style.height="3px"
+        td.style.width = "12px"
+        td.style.height="12px"
         td.style.border = "solid black 1px"
+        td.style.value = ''
         td.addEventListener('click',()=>{
             td.style.backgroundColor='aqua'
+            td.style.value= "1"
         })
         tr.appendChild(td)
     }
