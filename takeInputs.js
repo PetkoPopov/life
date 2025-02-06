@@ -75,8 +75,7 @@ button.addEventListener('click',()=>{
     button.style.backgroundColor = "lightgreen"
        
  button.appendChild(circle)
-    setTimeout(() => {
-        
+    setTimeout(() => {       
         button.textContent=' '
         button.style.backgroundColor = "yellow"
         button.removeChild(circle)
