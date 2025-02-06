@@ -1,11 +1,25 @@
-import { hor ,ver} from "./takeInputs"
 
-// let div = document.getElementById('life')
-// let table = document.createElement("table")
-// let tr = document.createElement('tr')
-function makeTable(){
-    return"hello"
+function makeTable(rows,cols){
+
+
+let table = document.createElement('table')
+for(let row = 0 ;row < rows ;row++ ){
+    let tr = document.createElement('tr')
+    for(let col =0 ;col<cols;col++){
+        let td = document.createElement("td")
+        console.log('in TD')
+        td.style.width = "3px"
+        td.style.height="3px"
+        td.style.border = "solid black 1px"
+        td.addEventListener('click',()=>{
+            td.style.backgroundColor='aqua'
+        })
+        tr.appendChild(td)
+    }
+    table.appendChild(tr)
 }
-let horValue = hor.textContent
-console.log(horValue)
-export{horValue}
+let div = document.getElementById('table')
+div.appendChild(table)
+}
+
+export{makeTable}

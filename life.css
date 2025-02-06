@@ -2,7 +2,11 @@ body {
     background-color: rgb(82, 167, 241);
 
 }
+table{
+    border:5px solid;
+    border-color: aqua;
 
+}
 div:hover {
     cursor: pointer;
 }
