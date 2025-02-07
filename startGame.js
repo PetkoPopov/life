@@ -1,6 +1,7 @@
-export function startGame(rows, cols) {
+var interval;
+function startGame(rows, cols) {
     let tds = document.getElementsByTagName("td")
-    let interval = setInterval(() => {
+     interval = setInterval(() => {
         //  clearInterval(interval)
         let count = 0
         let arrIndex = []
@@ -17,7 +18,7 @@ export function startGame(rows, cols) {
             if (tds[i + 1 - cols] && tds[i + 1 - cols].style.value == '1') { count++ }
             if (tds[i - 1 - cols] && tds[i - 1 - cols].style.value == '1') { count++ }
             
-            if(count == 3||count==4||count==5||count==2){ arrIndex.push(i)   }
+            if(count == 3||count==4||count==5){ arrIndex.push(i)   }
             if(count == 1||count==8||count==6){ arrNegative.push(i)}
 
         }
@@ -32,4 +33,8 @@ export function startGame(rows, cols) {
 
     }, 300)
 
+}
+export{
+    interval,
+    startGame
 }
