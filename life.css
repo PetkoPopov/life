@@ -1,12 +1,14 @@
 body {
     background-color: rgb(82, 167, 241);
-/* background-color: rgb(169, 233, 50); */
+    /* background-color: rgb(169, 233, 50); */
 }
-table{
-    border:5px solid;
+
+table {
+    border: 5px solid;
     border-color: aqua;
 
 }
+
 div:hover {
     cursor: pointer;
 }
@@ -21,9 +23,10 @@ div:hover {
     border-radius:"20px";
     box-shadow:"10px 6px darkolivegreen";
     background-color:"yellow" */
-position: absolute;
+    /* position: relative */
 }
-._buttonTest:hover{
-    cursor:cell;
-    
+
+._buttonTest:hover {
+    cursor: cell;
+
 }

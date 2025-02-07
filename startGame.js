@@ -13,13 +13,13 @@ function startGame(rows, cols) {
             if (tds[i - 1] && tds[i - 1].style.value == '1') { count++ }
             if (tds[i + cols] && tds[i + cols].style.value == '1') { count++ }
             if (tds[i - cols] && tds[i - cols].style.value == '1') { count++ }
-            if (tds[i + 1 + cols] && tds[i + 1 + cols].style.value == '1') { count++ }
-            if (tds[i - 1 + cols] && tds[i - 1 + cols].style.value == '1') { count++ }
-            if (tds[i + 1 - cols] && tds[i + 1 - cols].style.value == '1') { count++ }
-            if (tds[i - 1 - cols] && tds[i - 1 - cols].style.value == '1') { count++ }
+            // if (tds[i + 1 + cols] && tds[i + 1 + cols].style.value == '1') { count++ }
+            // if (tds[i - 1 + cols] && tds[i - 1 + cols].style.value == '1') { count++ }
+            // if (tds[i + 1 - cols] && tds[i + 1 - cols].style.value == '1') { count++ }
+            // if (tds[i - 1 - cols] && tds[i - 1 - cols].style.value == '1') { count++ }
             
-            if(count == 3||count==4||count==5){ arrIndex.push(i)   }
-            if(count == 1||count==8||count==6){ arrNegative.push(i)}
+            if(count == 3||count == 2 ){ arrIndex.push(i)   }
+            if(count == 1||count == 4 ){ arrNegative.push(i)}
 
         }
         arrIndex.forEach(index => {

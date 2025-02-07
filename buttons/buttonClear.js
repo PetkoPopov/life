@@ -9,16 +9,17 @@ buttonClr.addEventListener('click', () => {
     circle.style.borderRadius = "50%"
     circle.style.border = "solid black 3px"
     circle.style.textAlign = 'center'
-    circle.style.position = "fixed"
-    circle.style.left = "630px"
-    circle.style.top = "25px"
+    // circle.style.position = "fixed"
+    circle.style.position = "relative"
+    // circle.style.left = "25pz"
+    // circle.style.top = "25pz"
     circle.style.width = "30px"
     circle.style.height = "30px"
     circle.style.backgroundColor = "yellow"
 
     buttonClr.style.backgroundColor = "lightblue"
     buttonClr.appendChild(circle)
-    
+
     setTimeout(() => {
         buttonClr.style.backgroundColor = "red"
         buttonClr.removeChild(circle)
@@ -26,9 +27,10 @@ buttonClr.addEventListener('click', () => {
 
 })
 buttonClr.style.textAlign = 'center'
-buttonClr.style.position = "fixed"
-buttonClr.style.left = "580px"
-buttonClr.style.top = "10px"
+// buttonClr.style.position = "fixed"
+buttonClr.style.position = "relative"
+// buttonClr.style.left = "580px"
+// buttonClr.style.top = "10px"
 buttonClr.style.width = "120px"
 buttonClr.style.height = "60px"
 buttonClr.style.border = "black solid 5px"
@@ -38,4 +40,4 @@ buttonClr.style.backgroundColor = "red"
 buttonClr.style.fontSize = "125%"
 buttonClr.textContent = 'ClearTable'
 
-export{buttonClr}
+export { buttonClr }

@@ -9,19 +9,20 @@ button.addEventListener('click', () => {
     circle.style.borderRadius = "50%"
     circle.style.border = "solid black 3px"
     circle.style.textAlign = 'center'
-    circle.style.position = "fixed"
-    circle.style.left = "470px"
-    circle.style.top = "25px"
+    // circle.style.position = "fixed"
+    circle.style.position = "relative"
+    // circle.style.left = "470px"
+    // circle.style.top = "25px"
     circle.style.width = "30px"
     circle.style.height = "30px"
     circle.style.textAlign = "center"
     circle.style.backgroundColor = 'red'
 
     let rows = document.getElementById("input-hor")
-    
+
     let cols = document.getElementById('input-ver')
 
-    makeTable(Number(rows.textContent),Number(cols.textContent))
+    makeTable(Number(rows.textContent), Number(cols.textContent))
     button.style.backgroundColor = "yellow"
 
     button.appendChild(circle)
@@ -32,9 +33,10 @@ button.addEventListener('click', () => {
     }, 300)
 })
 button.style.textAlign = 'center'
-button.style.position = "fixed"
-button.style.left = "420px"
-button.style.top = "10px"
+// button.style.position = "fixed"
+button.style.position = "relative"
+// button.style.left = "420px"
+// button.style.top = "10px"
 button.style.width = "120px"
 button.style.height = "60px"
 button.style.border = "black solid 5px"
