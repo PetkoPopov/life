@@ -14,7 +14,7 @@ hor.style.boxShadow = "10px 6px darkolivegreen"
 hor.style.backgroundColor = "yellow"
 
 
-let count = 1
+let count = 20
 hor.addEventListener("wheel", () => {
     count = count + 1
     hor.textContent = count

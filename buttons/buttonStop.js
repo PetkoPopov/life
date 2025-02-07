@@ -1,3 +1,4 @@
+import { interval } from "../startGame.js"
 import { stopGame } from "../stopGame.js"
 
 let buttonStop = document.createElement('div')
@@ -18,7 +19,7 @@ buttonStop.addEventListener('click', () => {
     circle.style.textAlign = "center"
     circle.style.backgroundColor = 'red'
 
-    stopGame()
+    stopGame(interval)
     buttonStop.style.backgroundColor = "yellow"
 
     buttonStop.appendChild(circle)

@@ -1,4 +1,4 @@
-import { interval } from "./startGame.js";
-export function stopGame(){
+
+export function stopGame(interval){
     clearInterval(interval)
 }

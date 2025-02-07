@@ -13,7 +13,7 @@ ver.style.borderRadius = "20px"
 ver.style.boxShadow = "10px 6px darkolivegreen"
 ver.style.backgroundColor = "yellow"
 
-let countVer = 1
+let countVer = 30
 ver.addEventListener("wheel", () => {
     countVer = countVer + 1
     ver.textContent = countVer
