@@ -13,7 +13,7 @@ for(let row = 0 ;row < rows ;row++ ){
         td.style.border = "solid black 1px"
         td.style.value = ''
         td.addEventListener('click',()=>{
-            td.style.backgroundColor='aqua'
+            td.style.backgroundColor ='rgb(132, 217, 13)'
             td.style.value= "1"
         })
         tr.appendChild(td)

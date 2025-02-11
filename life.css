@@ -13,17 +13,9 @@ div:hover {
     cursor: pointer;
 }
 
-._buttonTest {
-    /* width: "120px";
-    height: "60px";
-    border-radius: "20px";
-    font-size: "40px";
-    text-align: "center";
-    border:"black solid 5px";
-    border-radius:"20px";
-    box-shadow:"10px 6px darkolivegreen";
-    background-color:"yellow" */
-    /* position: relative */
+.button {
+ animation-duration: '500ms';    
+
 }
 
 ._buttonTest:hover {

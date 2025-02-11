@@ -2,9 +2,10 @@ import { interval } from "../startGame.js"
 import { stopGame } from "../stopGame.js"
 
 let buttonStop = document.createElement('div')
-
+buttonStop.setAttribute('class',"button")
 buttonStop.addEventListener('click', () => {
-
+    let audio = document.getElementsByTagName('audio')[0]
+    audio.pause()
     let circle = document.createElement('div')
     circle.style.borderRadius = "50%"
     circle.style.border = "solid black 3px"

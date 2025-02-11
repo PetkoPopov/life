@@ -2,7 +2,8 @@ import { startGame } from "../startGame.js"
 
 let buttonStart = document.createElement('div')
 buttonStart.addEventListener('click', () => {
-
+   let audio = document.getElementsByTagName('audio')[0]
+   audio.play()
     let rows = document.getElementById("input-hor")
     let cols = document.getElementById('input-ver')
 
@@ -29,7 +30,7 @@ buttonStart.addEventListener('click', () => {
         buttonStart.style.backgroundColor = "red"
         buttonStart.removeChild(circle)
 
-    }, 300)
+    }, 700)
 })
 buttonStart.style.textAlign = 'center'
 // buttonStart.style.position = "fixed"
