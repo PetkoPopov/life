@@ -1,9 +1,9 @@
 
 var ver = document.getElementById('input-ver')
-// ver.style.position = "fixed"
-ver.style.position = "relative"
-// ver.style.left = "250px"
-// ver.style.top = "10px"
+ver.style.position = "fixed"
+// ver.style.position = "absolution"
+ver.style.left = "250px"
+ver.style.top = "10px"
 ver.style.width = "120px"
 ver.style.height = "60px"
 ver.style.fontSize = "40px"

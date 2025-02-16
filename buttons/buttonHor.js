@@ -1,9 +1,9 @@
 
 var hor = document.getElementById('input-hor')
-// hor.style.position="fixed"
-hor.style.position = "relative"
-// hor.style.left = "75px"
-// hor.style.top = "10px"
+hor.style.position="fixed"
+// hor.style.position = "absolution"
+hor.style.left = "75px"
+hor.style.top = "10px"
 hor.style.width = "120px"
 hor.style.height = "60px"
 hor.style.fontSize = "40px"
