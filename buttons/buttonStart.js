@@ -1,6 +1,7 @@
 import { startGame } from "../startGame.js"
 
 let buttonStart = document.createElement('div')
+buttonStart.setAttribute('class', 'btn')
 buttonStart.addEventListener('click', () => {
     let audio = document.getElementsByTagName('audio')[0]
     audio.play()
@@ -13,10 +14,10 @@ buttonStart.addEventListener('click', () => {
     circle.style.borderRadius = "50%"
     circle.style.border = "solid black 3px"
     circle.style.textAlign = 'center'
-    circle.style.position = "fixed"
-    // circle.style.position = "absolution"
-    circle.style.left = "880px"
-    circle.style.top = "25px"
+    // circle.style.position = "fixed"
+    circle.style.position = "absolute"
+    // circle.style.left = "880px"
+    // circle.style.top = "25px"
     circle.style.width = "30px"
     circle.style.height = "30px"
     circle.style.fontSize = "40px"
@@ -32,18 +33,7 @@ buttonStart.addEventListener('click', () => {
 
     }, 700)
 })
-buttonStart.style.textAlign = 'center'
-buttonStart.style.position = "fixed"
-// buttonStart.style.position = "absolution"
-buttonStart.style.left = "830px"
-buttonStart.style.top = "10px"
-buttonStart.style.width = "120px"
-buttonStart.style.height = "60px"
-buttonStart.style.border = "black solid 5px"
-buttonStart.style.borderRadius = "20px"
-buttonStart.style.boxShadow = "10px 6px darkolivegreen"
-buttonStart.style.backgroundColor = "red"
-buttonStart.style.fontSize = "125%"
+
 buttonStart.textContent = "StartGame"
 
 export {

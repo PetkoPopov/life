@@ -2,7 +2,7 @@ import { interval } from "../startGame.js"
 import { stopGame } from "../stopGame.js"
 
 let buttonStop = document.createElement('div')
-buttonStop.setAttribute('class', "button")
+buttonStop.setAttribute('class', "btn")
 buttonStop.addEventListener('click', () => {
     let audio = document.getElementsByTagName('audio')[0]
     audio.pause()
@@ -10,10 +10,10 @@ buttonStop.addEventListener('click', () => {
     circle.style.borderRadius = "50%"
     circle.style.border = "solid black 3px"
     circle.style.textAlign = 'center'
-    circle.style.position = "fixed"
-    // circle.style.position = "absolution"
-    circle.style.left = "1050px"
-    circle.style.top = "25px"
+    // circle.style.position = "fixed"
+    circle.style.position = "absolute"
+    // circle.style.left = "1050px"
+    // circle.style.top = "25px"
     // circle.style.padding = '1%'
     circle.style.width = "30px"
     circle.style.height = "30px"
@@ -30,18 +30,7 @@ buttonStop.addEventListener('click', () => {
         buttonStop.removeChild(circle)
     }, 300)
 })
-buttonStop.style.textAlign = 'center'
-buttonStop.style.position = "fixed"
-// buttonStop.style.position = "absolution"
-buttonStop.style.left = "1000px"
-buttonStop.style.top = "10px"
-buttonStop.style.width = "120px"
-buttonStop.style.height = "60px"
-buttonStop.style.border = "black solid 5px"
-buttonStop.style.borderRadius = "20px"
-buttonStop.style.boxShadow = "10px 6px darkolivegreen"
-buttonStop.style.backgroundColor = "lightgreen"
-buttonStop.style.fontSize = "125%"
+
 buttonStop.textContent = "StopGame"
 
 

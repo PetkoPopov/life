@@ -1,16 +1,6 @@
 
 var hor = document.getElementById('input-hor')
-hor.style.position="fixed"
-// hor.style.position = "absolution"
-hor.style.left = "75px"
-hor.style.top = "10px"
-hor.style.width = "120px"
-hor.style.height = "60px"
-hor.style.fontSize = "40px"
-hor.style.textAlign = "center"
-hor.style.border = "black solid 5px"
-hor.style.borderRadius = "20px"
-hor.style.boxShadow = "10px 6px darkolivegreen"
+hor.setAttribute('class', 'btn')
 hor.style.backgroundColor = "yellow"
 
 

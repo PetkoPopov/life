@@ -1,7 +1,7 @@
 import { makeTable } from "../makeTable.js"
 
 let button = document.createElement('div')
-
+    button.setAttribute('class', 'btn')
 button.addEventListener('click', () => {
 
 
@@ -9,10 +9,10 @@ button.addEventListener('click', () => {
     circle.style.borderRadius = "50%"
     circle.style.border = "solid black 3px"
     circle.style.textAlign = 'center'
-    circle.style.position = "fixed"
-    // circle.style.position = "absolution"
-    circle.style.left = "470px"
-    circle.style.top = "25px"
+    // circle.style.position = "fixed"
+    circle.style.position = "absolute"
+    // circle.style.left = "60px"
+    // circle.style.top = "30px"
     circle.style.width = "30px"
     circle.style.height = "30px"
     circle.style.textAlign = "center"
@@ -32,18 +32,7 @@ button.addEventListener('click', () => {
         button.removeChild(circle)
     }, 300)
 })
-button.style.textAlign = 'center'
-button.style.position = "fixed"
-// button.style.position = "absolution"
-button.style.left = "420px"
-button.style.top = "10px"
-button.style.width = "120px"
-button.style.height = "60px"
-button.style.border = "black solid 5px"
-button.style.borderRadius = "20px"
-button.style.boxShadow = "10px 6px darkolivegreen"
-button.style.backgroundColor = "lightgreen"
-button.style.fontSize = "125%"
+
 button.textContent = "CreateTable"
 
 export {
